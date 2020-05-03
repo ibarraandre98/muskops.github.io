@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.logo-navbar-mobile {
+    width: 30%;
+}
+
+nav {
+    position: absolute;
+}
+
+.background {
+    background-color: #196afa;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 700 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23033287'/%3E%3Cstop offset='1' stop-color='%23033287' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230d98fc'/%3E%3Cstop offset='1' stop-color='%230d98fc' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23006680'/%3E%3Cstop offset='1' stop-color='%23006680' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23196afa'/%3E%3Cstop offset='1' stop-color='%23196afa' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23000000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230CF'/%3E%3Cstop offset='1' stop-color='%230CF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+ul {
+    list-style-type: none !important;
+}
+
+li {
+    margin-right: 10% !important;
+}
+
+.sm-nav {
+    padding-bottom: 8%;
+}
+
+.sm-nav-ul {
+    margin-right: 10% !important;
+    list-style-type: none;
+}
+
+a {
+    font-weight: 500;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    color: white;
+    list-style-type: none;
+}
+
+#left {
+    position: absolute;
+    top: 60%;
+    height: 30%;
+}
+
+#right {
+    position: absolute;
+    top: 20%;
+    height: 30%;
+    right: 0;
+}
+
+.sm-title {
+    padding-bottom: 5%;
+    font-size: 2.5em;
+    transition: all 3s ease-in-out;
+}
+
+.sm-social>a {
+    padding: 2%;
+    font-size: 250%;
+    transition: color 0.5s ease;
+}
+
+.sm-social>a:hover {
+    color: rgb(0, 89, 255);
+}
+
+.aboutme {
+    height: 100vh;
+    /* background-color: rgb(9, 0, 128); */
+    background-color: whitesmoke;
+    padding: 10%;
+    color: rgb(38, 154, 213);
+}
+
+#sobremi {
+    font-weight: bold;
+    padding-bottom: 3%;
+}
+
+#descripcion {
+    padding-bottom: 5%;
+}
+
+.sm-card {
+    background-color: rgb(38, 154, 213);
+    width: 100% !important;
+    border-radius: 15px;
+}
+
+.card {
+    border: 0 !important;
+    background-color: transparent !important;
+    border-color: black !important;
+}
+
+.card-body {
+    color: white;
+}
