@@ -52,6 +52,11 @@ a {
     font-variant: small-caps;
     color: white;
     list-style-type: none;
+    transition: all 0.5s ease;
+}
+
+a:hover {
+    color: black;
 }
 
 #left {
@@ -68,10 +73,13 @@ a {
 }
 
 .sm-title {
+    padding-top: 5%;
     padding-bottom: 5%;
     font-size: 2.5em;
     transition: all 3s ease-in-out;
 }
+
+.sm-title-pri {}
 
 .sm-social>a {
     padding: 2%;
@@ -86,9 +94,16 @@ a {
 .aboutme {
     height: 100vh;
     /* background-color: rgb(9, 0, 128); */
-    background-color: whitesmoke;
-    padding: 10%;
-    color: rgb(38, 154, 213);
+    color: white;
+}
+
+.aboutme-up {
+    padding: 10% 10% 10% 10%;
+    background-color: rgb(23, 106, 159);
+}
+
+.aboutme-down {
+    background-color: black;
 }
 
 #sobremi {
@@ -101,17 +116,54 @@ a {
 }
 
 .sm-card {
-    background-color: rgb(38, 154, 213);
-    width: 100% !important;
-    border-radius: 15px;
+    top: -75px;
+    position: relative;
+}
+
+.sm-card:hover .card {
+    filter: blur(5px);
 }
 
 .card {
-    border: 0 !important;
-    background-color: transparent !important;
-    border-color: black !important;
+    padding: 15px;
+    border-radius: 15px;
+    border: 0.5 !important;
+    background-color: black !important;
+    border-color: rgb(23, 106, 159) !important;
+    transition: all 0.5s ease-out;
+}
+
+.card:hover {
+    border-radius: 15px;
+    border: 0.5 !important;
+    transform: scale(1.11);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    filter: blur(0px) !important;
 }
 
 .card-body {
+    color: rgb(23, 106, 159);
+    text-align: center;
+}
+
+.card-image {
+    font-size: 5em;
+    padding: 5%;
+    color: rgb(23, 106, 159);
+}
+
+.card-title {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.card-subtitle {
     color: white;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.sm-card-title {
+    padding-bottom: 5%;
+    height: 250px;
 }
