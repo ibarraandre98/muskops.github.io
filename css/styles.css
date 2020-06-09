@@ -14,7 +14,9 @@ body {
 }
 
 .logo-navbar-mobile {
+    position: relative;
     width: 30%;
+    left: -30px;
 }
 
 nav {
@@ -22,10 +24,9 @@ nav {
 }
 
 .background {
-    background-color: #196afa;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 700 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23033287'/%3E%3Cstop offset='1' stop-color='%23033287' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230d98fc'/%3E%3Cstop offset='1' stop-color='%230d98fc' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23006680'/%3E%3Cstop offset='1' stop-color='%23006680' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23196afa'/%3E%3Cstop offset='1' stop-color='%23196afa' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23000000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230CF'/%3E%3Cstop offset='1' stop-color='%230CF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
-    background-attachment: fixed;
+    background-image: url("../img/a.svg");
     background-size: cover;
+    background-attachment: local;
     height: 100vh;
 }
 
@@ -34,16 +35,57 @@ ul {
 }
 
 li {
-    margin-right: 10% !important;
+    margin-right: 5% !important;
 }
 
 .sm-nav {
     padding-bottom: 8%;
 }
 
+.sm-navbar {
+    color: rgb(29, 112, 189);
+}
+
 .sm-nav-ul {
     margin-right: 10% !important;
     list-style-type: none;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .sm-nav-ul-li {}
+    .sm-nav-ul-li a {
+        color: rgb(29, 112, 189);
+        width: 125%;
+    }
+    .sm-nav-ul-li a:hover {
+        color: white;
+        background-color: rgb(29, 112, 189);
+    }
+    .back {
+        background: white;
+    }
+    .sm-title {
+        padding-top: 80px !important;
+        color: rgb(29, 112, 189) !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding-left: 50%;
+        margin-bottom: 50px;
+    }
+    .mob-sm-social {
+        padding: 5% !important;
+        color: rgb(29, 112, 189) !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-direction: row !important;
+    }
+    .mob-sm-social:hover {
+        color: black !important;
+    }
 }
 
 ul li a {
@@ -53,6 +95,10 @@ ul li a {
     color: white;
     list-style-type: none !important;
     transition: all 0.5s ease;
+}
+
+ul li a:hover {
+    color: black;
 }
 
 .sm-social a {
@@ -84,20 +130,23 @@ ul li a {
 .sm-title {
     padding-top: 5%;
     padding-bottom: 5%;
-    font-size: 2.5em;
-    transition: all 3s ease-in-out;
+    font-size: 3em;
+    color: rgb(29, 112, 189);
+    transition: all 2s ease-in-out;
+    width: 35%;
 }
 
 .sm-title-pri {}
 
 .sm-social>a {
-    padding: 2%;
+    padding: 1.8%;
     font-size: 250%;
     transition: color 0.5s ease;
+    color: rgb(29, 112, 189);
 }
 
 .sm-social>a:hover {
-    color: rgb(0, 89, 255);
+    color: black;
 }
 
 .aboutme {
@@ -107,7 +156,7 @@ ul li a {
 
 .aboutme-up {
     padding: 10% 10% 10% 10%;
-    background-color: rgb(23, 106, 159);
+    background-color: rgb(29, 112, 189);
 }
 
 .aboutme-down {
@@ -131,7 +180,7 @@ ul li a {
 }
 
 .sm-card:hover .card {
-    filter: blur(5px);
+    /* filter: blur(5px); */
 }
 
 .card {
@@ -139,9 +188,9 @@ ul li a {
     border-radius: 15px;
     border: 0.5 !important;
     background-color: black !important;
-    border-color: rgb(23, 106, 159) !important;
+    border-color: rgb(29, 112, 189) !important;
     transition: all 0.5s ease-out;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
 }
 
 .card:hover {
@@ -153,14 +202,14 @@ ul li a {
 }
 
 .card-body {
-    color: rgb(23, 106, 159);
+    color: rgb(29, 112, 189);
     text-align: center;
 }
 
 .card-image {
     font-size: 5em;
     padding: 5%;
-    color: rgb(23, 106, 159);
+    color: rgb(29, 112, 189);
 }
 
 .card-title {
@@ -186,7 +235,7 @@ ul li a {
 .sm-proyectos-title {
     padding-bottom: 35px;
     text-align: center;
-    color: rgba(23, 107, 159, 0.938);
+    color: rgba(29, 112, 189);
 }
 
 .sm-col-prin {
@@ -196,9 +245,9 @@ ul li a {
 .sm-col {
     height: 300px;
     border-radius: 15px;
-    border: 1px solid black;
+    border: 1px solid rgb(29, 112, 189);
     background-color: rgb(12, 12, 12);
-    color: rgba(23, 107, 159, 0.938);
+    color: rgba(29, 112, 189);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,7 +281,7 @@ ul li a {
 
 .sm-description a {
     font-size: 2.5em !important;
-    color: rgba(23, 107, 159, 0.938);
+    color: rgba(29, 112, 189);
     transition: all 0.5s;
 }
 
@@ -270,5 +319,5 @@ ul li a {
 }
 
 .sm-footer-social>a:hover {
-    color: rgb(0, 89, 255) !important;
+    color: rgb(29, 112, 189) !important;
 }
