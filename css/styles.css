@@ -7,10 +7,36 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.sm-btn {
+    position: fixed;
+    z-index: 10;
+    right: 30px;
+    bottom: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(29, 112, 189);
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.sm-btn:hover {
+    background-color: black;
+}
+
+.sm-btn-interior {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .logo-navbar-mobile {
@@ -73,7 +99,7 @@ li {
         align-items: center;
         flex-direction: row;
         padding-left: 50%;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
     .mob-sm-social {
         padding: 5% !important;
