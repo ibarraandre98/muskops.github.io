@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logoMuski.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/all.min.js"></script>
+    <script src="https://kit.fontawesome.com/1d51d9bdad.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -72,12 +73,12 @@
             </div>
         </div>
     </section>
-    <section style="background-color: rgb(245, 245, 245);">
+    <section style="background-color: rgb(245, 245, 245);" class="pb-5">
         <div style="padding-top: 70px;">
 
             <div class="container">
                 <div class="text-center px-5">
-                    <h1 class="mb-3" style="color: rgb(78, 128, 204);">Acerca de mi</h1>
+                    <h1 class="mb-3 font-weight-bold" style="color: rgb(78, 128, 204);">Acerca de mi</h1>
                     <h3>Me presento mi nombre es André Ibarra Pérez</h3>
                     <h5>Soy un desarrollador de software con experiencia, he trabajado con proyectos para la universidad y algunos otros proyectos personales, en gran parte de estos como lider del proyecto. Soy una persona con liderazgo, ganas de superarse,
                         muy autodidacta, responsable y un apasionado a dar soluciones programando.</h5>
@@ -180,8 +181,174 @@
             </div>
         </div>
     </section>
-    <section class="sm-proyectos">
-
+    <section class="sm-proyectos py-5">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="font-weight-bold" style="color: rgb(78, 128, 204);">Mis proyectos personales</h1>
+                <h5>Algunos de los proyectos que he trabajado recientemente</h5>
+            </div>
+            <div style="margin-top: 50px;">
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div id="saspre" class="sm-card-pro d-flex justify-content-center align-items-center">
+                            <img class="sm-image" src="/img/proyectos/saspre.png">
+                            <div class="sm-descripcion px-4">
+                                <h3 class="font-weight-bold">SASPRE</h3>
+                                <p class="text-justify">
+                                    Programa capaz de calcular plagas en los cultivos y llevar un control de estos además de las cosechas desarrollado en C# con MySQL.
+                                </p>
+                                <div class="d-flex justify-content-around w-100">
+                                    <a href="https://github.com/muskops/SASPREDesktop" target="_blank"><i class="fas fa-file-code"></i></a>
+                                    <a href="http://saspre.com/" target="_blank"><i class="fas fa-globe"></i></a>
+                                    <a href="https://www.youtube.com/watch?v=RVfsT8f-Lig" target="_blank"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div id="saspre" class="sm-card-pro d-flex justify-content-center align-items-center">
+                            <img class="sm-image" src="/img/proyectos/sasprem.png">
+                            <div class="sm-descripcion px-4">
+                                <h3 class="font-weight-bold">SASPRE Mobile</h3>
+                                <p class="text-justify">Aplicación móvil de SASPRE realiza todo lo anterior en el Smartphone para más facilidad, desarrollada en Ionic con web services PHP y MySQL.
+                                </p>
+                                <div class="d-flex justify-content-around w-100">
+                                    <a href="https://github.com/muskops/SASPREMobile" target="_blank"><i class="fas fa-file-code"></i></a>
+                                    <a href="http://saspre.com/" target="_blank"><i class="fas fa-globe"></i></a>
+                                    <a href="https://www.youtube.com/watch?v=RVfsT8f-Lig" target="_blank"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div id="saspre" class="sm-card-pro d-flex justify-content-center align-items-center">
+                            <img class="sm-image" src="/img/proyectos/sasprew.png">
+                            <div class="sm-descripcion px-4">
+                                <h3 class="font-weight-bold">SASPRE Web</h3>
+                                <p class="text-justify">Página web para dar a conocer los 2 proyectos anteriores, realizada con HTML, CSS con Boostrap y hosteada en un dominio.
+                                </p>
+                                <div class="d-flex justify-content-around w-100">
+                                    <a href="https://github.com/muskops/SaspreWeb" target="_blank"><i class="fas fa-file-code"></i></a>
+                                    <a href="http://saspre.com/" target="_blank"><i class="fas fa-globe"></i></a>
+                                    <a href="https://www.youtube.com/watch?v=RVfsT8f-Lig" target="_blank"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div id="hbuild" class="sm-card-pro d-flex justify-content-center align-items-center">
+                            <img class="sm-image" src="/img/proyectos/hbuildblanco.png" alt="HBuild">
+                            <div class="sm-descripcion px-4">
+                                <h3 class="font-weight-bold">HBuild</h3>
+                                <p class="text-justify">Aplicación móvil la cual es una red social para arquitectos y gente involucrada en construcciones, para ver casas, departamentos y edificios, desarrollada en Ionic con Firebase.
+                                </p>
+                                <div class="d-flex justify-content-around w-100">
+                                    <a href="https://github.com/HBuild-Community/HBuild" target="_blank"><i class="fas fa-file-code"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div id="cosas" class="sm-card-pro d-flex justify-content-center align-items-center">
+                            <img class="sm-image" src="/img/proyectos/cosas.png" alt="Cosas del Tec Mante">
+                            <div class="sm-descripcion px-4">
+                                <h3 class="font-weight-bold">Cosas del Tec Mante</h3>
+                                <p class="text-justify">Página web enfocada a estudiantes para calificar y puntuar a los maestros del Tecnológico de El Mante, desarrollada con HTML, CSS y PHP.
+                                </p>
+                                <div class="d-flex justify-content-around w-100">
+                                    <!-- <a href="https://github.com/iTzFiliSalsa/CosasDelTecMante" target="_blank"><i class="fas fa-file-code"></i></a> -->
+                                    <a href="http://cosasdeltecmante.com/" target="_blank"><i class="fas fa-globe"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div id="covid" class="sm-card-pro d-flex justify-content-center align-items-center">
+                            <img class="sm-image" src="/img/proyectos/covidpreviene1.png" alt="Covid Previene">
+                            <div class="sm-descripcion px-4">
+                                <h3 class="font-weight-bold">Covid Previene</h3>
+                                <p class="text-justify">App realizada en verano de investigacion 2020 en el ITESM que pronostica los tiempos de menor concurrencia en lugares, utilizando Ionic, Google Maps API y BestTime.app.
+                                </p>
+                                <div class="d-flex justify-content-around w-100">
+                                    <a href="https://github.com/muskops/covid-previene-19" target="_blank"><i class="fas fa-file-code"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div id="talent" class="sm-card-pro d-flex justify-content-center align-items-center">
+                            <img class="sm-image" src="/img/proyectos/talent.png" alt="Talent Top">
+                            <div class="sm-descripcion px-4">
+                                <h3 class="font-weight-bold">Talent Top</h3>
+                                <p class="text-justify">Aplicación móvil para evento especial de la carrera la cual permite hacer horario para cursos y pláticas, desarrollada en Flutter con web services PHP.
+                                </p>
+                                <div class="d-flex justify-content-around w-100">
+                                    <a href="https://github.com/Joaquin4562/talent_top" target="_blank"><i class="fas fa-file-code"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div id="bugoff" class="sm-card-pro d-flex justify-content-center align-items-center">
+                            <img class="sm-image" src="/img/proyectos/bugoff.png" alt="Bugoff">
+                            <div class="sm-descripcion px-4">
+                                <h3 class="font-weight-bold">Bugoff</h3>
+                                <p class="text-justify">Aplicación web el cual permite organizar todas aquellos bugs y errores de un proyecto, enfocado en testing, desarrollada con Angular y Firebase.
+                                </p>
+                                <div class="d-flex justify-content-around w-100">
+                                    <a href="https://github.com/XSAS-Community/Bugoff" target="_blank"><i class="fas fa-file-code"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div id="roseta" class="sm-card-pro d-flex justify-content-center align-items-center">
+                            <img class="sm-image" src="/img/proyectos/RosetaLogo.png" alt="Bugoff">
+                            <div class="sm-descripcion px-4">
+                                <h3 class="font-weight-bold">Roseta</h3>
+                                <p class="text-justify">Landing Page de productos Roseta los cuales fueron productos en un proyecto universitario para el emprendimiento realizada en HTML y CSS.
+                                </p>
+                                <div class="d-flex justify-content-around w-100">
+                                    <a href="https://github.com/muskops/Roseta" target="_blank"><i class="fas fa-file-code"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sm-footer p-5 vh-100">
+        <div class="container h-100 d-flex justify-content-center align-items-center flex-column">
+            <div class="d-flex flex-column align-items-center text-white text-center">
+                <h3 class="font-weight-bolder">André Ibarra Pérez</h3>
+                <p class="w-50">Desarrollador entusiasmado por programar aplicando todos los conocimientos que he obtenido a lo largo de mi carrera Ingeniero en Sistemas Computacionales.</p>
+            </div>
+            <div class="text-center">
+                <img src="./img/skaten.png" height="150px" alt="">
+                <h5 class="text-white">Si lo puedes imaginar lo puedes programar</h5>
+            </div>
+            <div class="d-flex justify-content-center pt-5">
+                <div class="sm-circle">
+                    <a href="https://drive.google.com/file/d/1hXSrsoEjYqjK4Mi0wbeAyWmqa9QZznIc/view?usp=sharing" target="_blank"><i class="far fa-file"></i></a>
+                </div>
+                <div class="sm-circle">
+                    <a href="https://github.com/muskops" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="sm-circle">
+                    <a href="https://www.linkedin.com/in/ibarraandre/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="sm-circle">
+                    <a href="https://www.facebook.com/sk8muski/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="sm-circle">
+                    <a href="https://www.youtube.com/user/Raseclon" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="pt-5">
+                <h6 class="text-center text-white">© 2020 Copyright: André Ibarra Pérez</h6>
+            </div>
+        </div>
     </section>
 </body>
 

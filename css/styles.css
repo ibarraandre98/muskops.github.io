@@ -1,7 +1,8 @@
-* {
-    padding: 0;
+html,
+body {
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
+    height: 100%;
 }
 
 body {
@@ -124,4 +125,140 @@ sm-nav-ul {
 .sm-lenguajes>img:hover {
     filter: grayscale(0);
     transform: scale(1.3);
+}
+
+.sm-proyectos {
+    /* background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
+}
+
+#saspre {
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+
+
+/* #saspre{
+    background: #34e89e; 
+background: -webkit-linear-gradient(to right, #0f3443, #34e89e);
+background: linear-gradient(to right, #0f3443, #34e89e);
+} */
+
+#hbuild {
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+
+#cosas {
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(85, 20, 28, 1) 0%, rgba(152, 44, 48, 1) 100%);
+}
+
+#covid {
+    background: #36D1DC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5B86E5, #36D1DC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#talent {
+    background: #667db6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#bugoff {
+    background: #141E30;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#roseta {
+    background: #FFAFBD;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffc3a0, #FFAFBD);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.sm-card-pro {
+    border-radius: 20px;
+    height: 260px;
+    position: relative;
+}
+
+.sm-image {
+    height: 125px;
+}
+
+.sm-descripcion {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(78, 127, 205, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+    flex-flow: column;
+    opacity: 0;
+    transition: all 0.5s;
+    cursor: default;
+}
+
+.sm-descripcion:hover {
+    opacity: 1;
+}
+
+.sm-descripcion div a {
+    font-size: 2.5em !important;
+    color: white;
+    transition: all 0.5s;
+}
+
+.sm-descripcion div a:hover {
+    color: rgb(220, 220, 220);
+    transform: scale(1.1);
+}
+
+.sm-footer {
+    background-color: rgb(82, 129, 201);
+}
+
+.sm-circle {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.sm-circle:hover {
+    background-color: white;
+}
+
+.sm-circle a {
+    color: white;
+    transition: all 0.3s;
+    font-size: 1.3em;
+}
+
+.sm-circle:not(:last-child) {
+    margin-right: 25px;
+}
+
+.sm-circle:hover a {
+    color: rgb(82, 129, 201);
 }
