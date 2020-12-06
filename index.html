@@ -4,127 +4,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logoMuski.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/1d51d9bdad.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <title>Sk8Muski</title>
+    <link rel="stylesheet" href="./css/lightbox.css">
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
 </head>
 
-<body>
-    <!-- <img src="/img/svg/left.svg" id="left">
-    <img src="/img/svg/right.svg" id="right"> -->
-    <a class="sm-btn" href="#inicio"><i class="fas fa-arrow-up text-white sm-btn-interior"></i></a>
-    <div id="inicio" class="background back" style="height: 100vh;">
-        <!-- <span>
-            <img src="img/a.svg" class="back">
-        </span> -->
-        <nav class="navbar navbar-expand-md ">
-            <div class="container-fluid sm-nav">
-                <img class="logo-navbar-mobile navbar-brand" src="img/logoAzul1.png" alt="" style="width: 15em;">
-                <button class="navbar-toggler sm-navbar" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <a class="fas fa-bars"></a>
-            </button>
-                <div class="collapse navbar-collapse sm-nav-ul" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto text-white">
-                        <li class="nav-item active sm-nav-ul-li">
-                            <a class="nav-link" href="#inicio">Inicio</a>
-                        </li>
-                        <li class="nav-item sm-nav-ul-li">
-                            <a class="nav-link" href="#sobremi">Yo</a>
-                        </li>
-                        <li class="nav-item sm-nav-ul-li">
-                            <a class="nav-link" href="#proyectos">Proyectos</a>
-                        </li>
-                        <li class="nav-item sm-nav-ul-li">
-                            <a class="nav-link" href="#contact">Contacto</a>
-                        </li>
-                    </ul>
+<body class="mb-5">
+    <a class="sm-btn" id="to-inicio"><i class="fas fa-arrow-up text-white"></i></a>
+    <section id="inicio">
+        <div class="sm-background-inicio">
+            <div class="container position-relative">
+                <nav class="navbar navbar-expand-lg navbar-dark primary-color sm-nav">
+                    <img class="logo-navbar-mobile navbar-brand" src="img/logoBlanco.png" alt="" style="width: 15em; cursor: pointer;">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="nav">
+                        <ul class="sm-nav-ul navbar-nav mr-auto d-flex justify-content-end w-100 align-items-center">
+                            <li class="nav-item active" id="to-inicio1">
+                                <a class="nav-link" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item" id="to-yo">
+                                <a class="nav-link" href="#">Yo</a>
+                            </li>
+                            <li class="nav-item" id="to-proyecto">
+                                <a class="nav-link" href="#">Proyectos</a>
+                            </li>
+                            <li class="nav-item" id="to-logros">
+                                <a class="nav-link" href="#">Logros</a>
+                            </li>
+                            <li class="nav-item" id="to-contacto">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+            <div class="container position-relative" style="margin-top: 70px;">
+                <div class="row">
+                    <div class="sm-my-name col-12 col-lg-6 px-5 px-md-0 text-center text-md-left" style="margin-top: 70px;">
+                        <h1 class="font-weight-normal" style="color: white; font-size: 3em;">Mi nombre es André y soy FrontEnd & Mobile Developer</h1>
+                        <div class="sm-social d-flex justify-content-between">
+                            <a href="https://drive.google.com/file/d/1hXSrsoEjYqjK4Mi0wbeAyWmqa9QZznIc/view?usp=sharing" target="_blank"><i class="far fa-file"></i></a>
+                            <a href="https://github.com/muskops" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/ibarraandre/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/sk8muski/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.youtube.com/user/Raseclon" target="_blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="sm-img-yo col-12 col-lg-6 d-flex justify-content-center">
+                        <img src="./img/André Ibarra.png" width="450px" height="450px" alt=" ">
+                    </div>
                 </div>
             </div>
-        </nav>
-        <div class="container-fluid sm-title-pri">
-            <h1 class="sm-title">Hola soy André. Y soy desarrollador.</h1>
-            <div class="sm-social mob-sm-social">
-                <a class="mob-sm-social" href="https://drive.google.com/file/d/1hXSrsoEjYqjK4Mi0wbeAyWmqa9QZznIc/view?usp=sharing" target="_blank"><i class="far fa-file"></i></a>
-                <a class="mob-sm-social" href="https://github.com/muskops" target="_blank"><i class="fab fa-github"></i></a>
-                <a class="mob-sm-social" href="https://www.linkedin.com/in/ibarraandre/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a class="mob-sm-social" href="https://www.facebook.com/sk8muski/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a class="mob-sm-social" href="https://www.youtube.com/user/Raseclon" target="_blank"><i class="fab fa-youtube"></i></a>
+            <div class="position-relative" style="height: 50px;">
+                <div class="custom-shape-divider-bottom-1606683148">
+                    <svg data-name="Layer 1 " xmlns="http://www.w3.org/2000/svg " viewBox="0 0 1200 120 " preserveAspectRatio="none ">
+                        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z
+                        " opacity=".25 " class="shape-fill "></path>
+                        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z
+                        " opacity=".5 " class="shape-fill "></path>
+                        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z " class="shape-fill "></path>
+                    </svg>
+                </div>
             </div>
         </div>
-    </div>
-    <section id="sobremi" class="aboutme">
-        <div class="aboutme-up">
-            <div class="container-fluid text-center">
-                <h2 id="sobremi">Me presento mi nombre es André Ibarra Pérez</h2>
-                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60%;">
-                <h4 id="descripcion" class="text-justify">
-                    Soy un desarrollador de software con experiencia, he trabajado con proyectos para la universidad y algunos otros proyectos personales, en gran parte de estos como lider del proyecto. Soy una persona con liderazgo, ganas de superarse, muy autodidacta,
-                    responsable y un apasionado a dar soluciones programando.
-                </h4>
-            </div>
-        </div>
-        <div class="aboutme-down">
-            <div class="sm-card container">
-                <div class="row justify-content-center">
-                    <div class="col-sm-12 col-md-6 col-lg-4 mt-sm-4 mt-md-0">
-                        <div class="card">
-                            <img src="" alt="">
-                            <div class="card-body">
-                                <div class="sm-card-title">
-                                    <i class="fas fa-pencil-ruler card-image"></i>
-                                    <h5 class="card-title">Habilidades personales</h5>
-                                    <h6 class="card-subtitle text-justify">Soy una persona con iniciativa y motivación y responsabilidad para poder solucionar cualquier problema.</h6>
+    </section>
+    <section id="acerca" class="pb-5 sm-acerca">
+        <div style="padding-top: 70px;">
+
+            <div class="container">
+                <div class="text-center px-5">
+                    <h1 class="mb-3 font-weight-bold" style="color: rgb(78, 128, 204);">Acerca de mi</h1>
+                    <h3>Me presento mi nombre es André Ibarra Pérez</h3>
+                    <h5>Soy un desarrollador de software con experiencia, he trabajado con proyectos para la universidad y algunos otros proyectos personales, en gran parte de estos como lider del proyecto. Soy una persona con liderazgo, ganas de superarse,
+                        muy autodidacta, responsable y un apasionado a dar soluciones programando.</h5>
+                </div>
+                <div class="sm-cards mt-5">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="sm-card px-5">
+                                <p style="font-size: 80px;">01</p>
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-4">
+                                        <i class="fas fa-pencil-ruler" style="font-size: 5em;"></i>
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <h3 style="font-weight: bolder;">Habilidades personales</h3>
+                                        <p>Soy una persona con iniciativa y motivación y responsabilidad para poder solucionar cualquier problema.</p>
+                                    </div>
                                 </div>
-                                <h6 class="card-title">Habilidades:</h6>
-                                <h6 class="card-subtitle">Autodidacta</h6>
-                                <h6 class="card-subtitle">Proactivo</h6>
-                                <h6 class="card-subtitle">Autonomía</h6>
-                                <h6 class="card-subtitle">Trabajo en equipo</h6>
-                                <h6 class="card-subtitle">Liderazgo</h6>
-                                <h6 class="card-subtitle">Trabajo bajo presión</h6>
-                                <h6 class="card-subtitle">Resolución de problemas</h6>
+                                <div class="sm-lenguajes row d-flex justify-content-center">
+                                    <img title="Autodidacta" src="./img/habilidades/autodidacta.png" alt="">
+                                    <img title="Proactivo" src="./img/habilidades/proactivo.png" alt="">
+                                    <img title="Autonomía" src="./img/habilidades/autonomia.png" alt="">
+                                    <img title="Trabajo en equipo" src="./img/habilidades/workteam.png" alt="">
+                                    <img title="Liderazgo" src="./img/habilidades/liderazgo.png" alt="">
+                                    <img title="Trabajo bajo presión" src="./img/habilidades/reloj.png" alt="">
+                                </div>
+                                <!-- <div class="row d-flex justify-content-center align-items-center">
+                                    <ul class="sm-list-acerca">
+                                        <li><span>•</span> Autodidacta</li>
+                                        <li><span>•</span> Proactivo</li>
+                                        <li><span>•</span> Autonomía</li>
+                                        <li><span>•</span> Trabajo en equipo</li>
+                                        <li><span>•</span> Liderazgo</li>
+                                        <li><span>•</span> Trabajo bajo presión</li>
+                                        <li><span>•</span> Resolución de problemas</li>
+                                    </ul>
+                                </div> -->
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 mt-sm-4 mt-md-0">
-                        <div class="card">
-                            <img src="" alt="">
-                            <div class="card-body">
-                                <div class="sm-card-title">
-                                    <i class="fas fa-file-code card-image"></i>
-                                    <h5 class="card-title">Desarrollador</h5>
-                                    <h6 class="card-subtitle text-justify">Me especializo en el desarrollo Fullstack, tengo buen manejo con los lenguajes de programación, las bases de datos y el diseño.</h6>
+                        <div class="col-12 col-lg-6" style="margin-top: 100px;">
+                            <div class="sm-card px-5">
+                                <p style="font-size: 80px;">02</p>
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-4">
+                                        <i class="fas fa-laptop-code" style="font-size: 5em;"></i>
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <h3 style="font-weight: bolder;">Desarrollador</h3>
+                                        <p>Me especializo en el desarrollo FrontEnd, tengo buen manejo con los lenguajes de programación, las bases de datos y el diseño.</p>
+                                    </div>
                                 </div>
-                                <h6 class="card-title">Lenguajes:</h6>
-                                <h6 class="card-subtitle">Typescript</h6>
-                                <h6 class="card-subtitle">HTML</h6>
-                                <h6 class="card-subtitle">C#</h6>
-                                <h6 class="card-subtitle">Java</h6>
-                                <h6 class="card-subtitle">Javascript</h6>
-                                <h6 class="card-subtitle">PHP</h6>
-                                <h6 class="card-subtitle">MySQL</h6>
+                                <div class="sm-lenguajes row d-flex justify-content-center">
+                                    <img src="./img/lenguajes/ts.png" alt="">
+                                    <img src="./img/lenguajes/js.png" alt="">
+                                    <img src="./img/lenguajes/html.png" alt="">
+                                    <img src="./img/lenguajes/css3.webp" alt="">
+                                    <img src="./img/lenguajes/csharp.png" alt="">
+                                    <img src="./img/lenguajes/mysql.png" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 col-md-4 mt-sm-4 mt-md-0">
-                        <div class="card">
-                            <img src="" alt="">
-                            <div class="card-body">
-                                <div class="sm-card-title">
-                                    <i class="fas fa-brain card-image"></i>
-                                    <h5 class="card-title">Experiencia</h5>
-                                    <h6 class="card-subtitle text-justify">Tengo experiencia en el desarrollo de aplicaciones móviles, web y de software de aplicación utilizando distintas tecnologías.</h6>
+                        <div class="col-12 col-lg-6" style="margin-top: -80px;">
+                            <div class="sm-card px-5">
+                                <p style="font-size: 80px;">03</p>
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-4">
+                                        <i class="fas fa-brain" style="font-size: 5em;"></i>
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <h3 style="font-weight: bolder;">Frameworks </h3>
+                                        <p>Tengo experiencia en el desarrollo de aplicaciones móviles, web y de software de aplicación utilizando distintas tecnologías.</p>
+                                    </div>
                                 </div>
-                                <h6 class="card-title">Tecnologías:</h6>
-                                <h6 class="card-subtitle">Angular</h6>
-                                <h6 class="card-subtitle">Ionic</h6>
-                                <h6 class="card-subtitle">Microsoft .NET</h6>
-                                <h6 class="card-subtitle">Bootstrap</h6>
-                                <h6 class="card-subtitle">Firebase</h6>
-                                <h6 class="card-subtitle">Photoshop</h6>
-                                <h6 class="card-subtitle">Adobe XD</h6>
+                                <div class="sm-lenguajes row d-flex justify-content-center">
+                                    <img src="./img/lenguajes/angular.png" alt="">
+                                    <img src="./img/lenguajes/ionic.png" alt="">
+                                    <img src="./img/lenguajes/firebase.png" alt="">
+                                    <img src="./img/lenguajes/quasar.png" alt="">
+                                    <img src="./img/lenguajes/vue.png" alt="">
+                                    <img src="./img/lenguajes/bootstrap.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 mt-4">
+                            <div class="sm-card px-5">
+                                <p style="font-size: 80px;">04</p>
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-4">
+                                        <i class="fas fa-dumbbell" style="font-size: 5em;"></i>
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <h3 style="font-weight: bolder;">Herramientas extras </h3>
+                                        <p>Tengo conocimiento en diversas herramientas que ayudan a realizar mejor y más rápido todo mi trabajo.</p>
+                                    </div>
+                                </div>
+                                <div class="sm-lenguajes row d-flex justify-content-center">
+                                    <img src="./img/lenguajes/git.png" alt="">
+                                    <img src="./img/lenguajes/amazon.png" alt="">
+                                    <img src="./img/lenguajes/nodejs.png" alt="">
+                                    <img src="./img/lenguajes/ps.png" alt="">
+                                    <img src="./img/lenguajes/xd.png" alt="">
+                                    <img src="./img/lenguajes/vegas.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -132,375 +195,332 @@
             </div>
         </div>
     </section>
-    <section id="proyectos" class="sm-proyectos">
-        <div class="container">
-            <div class="sm-proyectos-title">
-                <h1 class="text-center ">Mis proyectos</h1>
-                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 200px;">
-                <h5>Estos son los proyectos con los que he trabajado a lo largo de mi carrera</h5>
+    <section id="proyecto" class="sm-proyectos py-5 position-relative">
+        <div class="container position-relative">
+            <div class="text-center">
+                <h1 class="font-weight-bold" style="color: rgb(78, 128, 204);">Mis proyectos personales</h1>
+                <h5>Algunos de los proyectos que he trabajado recientemente</h5>
             </div>
-
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-4 sm-col-prin">
-                    <div class="sm-col">
-                        <img class="sm-image" src="/img/proyectos/saspre.png">
-                        <div class="sm-description">
-                            <h6>SASPRE</h6>
-                            <p class="text-justify">
-                                Programa capaz de calcular plagas en los cultivos y llevar un control de estos además de las cosechas desarrollado en C# con MySQL.
-                            </p>
-                            <div class="flex-row">
-                                <a style="padding-right: 20px;" href="https://github.com/muskops/SASPREDesktop" target="_blank"><i class="fas fa-file-code"></i></a>
-                                <a style="padding-right: 20px;" href="http://saspre.com/" target="_blank"><i class="fas fa-globe"></i></a>
-                                <a href="https://www.youtube.com/watch?v=RVfsT8f-Lig" target="_blank"><i class="fab fa-youtube"></i></a>
+            <div style="margin-top: 50px;">
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div id="saspre" class="sm-card-pro d-flex justify-content-center align-items-center">
+                            <img class="sm-image" src="/img/proyectos/saspre.png">
+                            <div class="sm-descripcion px-4">
+                                <h3 class="font-weight-bold">SASPRE</h3>
+                                <p class="text-justify">
+                                    Programa capaz de calcular plagas en los cultivos y llevar un control de estos además de las cosechas desarrollado en C# con MySQL.
+                                </p>
+                                <div class="d-flex justify-content-around w-100">
+                                    <a href="https://github.com/muskops/SASPREDesktop" target="_blank"><i class="fas fa-file-code"></i></a>
+                                    <a href="http://saspre.com/" target="_blank"><i class="fas fa-globe"></i></a>
+                                    <a href="https://www.youtube.com/watch?v=RVfsT8f-Lig" target="_blank"><i class="fab fa-youtube"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 sm-col-prin">
-                    <div class="sm-col">
-                        <img class="sm-image" src="/img/proyectos/sasprem.png" alt="SASPRE Mobile">
-                        <div class="sm-description">
-                            <h6>SASPRE Mobile</h6>
-                            <p class="text-justify">Aplicación móvil de SASPRE realiza todo lo anterior en el Smartphone para más facilidad, desarrollada en Ionic con web services PHP y MySQL.
-                            </p>
-                            <div class="flex-row">
-                                <a style="padding-right: 20px;" href="https://github.com/muskops/SASPREMobile" target="_blank"><i class="fas fa-file-code"></i></a>
-                                <a style="padding-right: 20px;" href="http://saspre.com/" target="_blank"><i class="fas fa-globe"></i></a>
-                                <a href="https://www.youtube.com/watch?v=RVfsT8f-Lig" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <div class="col-lg-4 mb-4">
+                        <div id="saspre" class="sm-card-pro d-flex justify-content-center align-items-center">
+                            <img class="sm-image" src="/img/proyectos/sasprem.png">
+                            <div class="sm-descripcion px-4">
+                                <h3 class="font-weight-bold">SASPRE Mobile</h3>
+                                <p class="text-justify">Aplicación móvil de SASPRE realiza todo lo anterior en el Smartphone para más facilidad, desarrollada en Ionic con web services PHP y MySQL.
+                                </p>
+                                <div class="d-flex justify-content-around w-100">
+                                    <a href="https://github.com/muskops/SASPREMobile" target="_blank"><i class="fas fa-file-code"></i></a>
+                                    <a href="http://saspre.com/" target="_blank"><i class="fas fa-globe"></i></a>
+                                    <a href="https://www.youtube.com/watch?v=RVfsT8f-Lig" target="_blank"><i class="fab fa-youtube"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 sm-col-prin">
-                    <div class="sm-col">
-                        <img class="sm-image" src="/img/proyectos/sasprew.png" alt="SASPRE Mobile">
-                        <div class="sm-description">
-                            <h6>SASPRE Web</h6>
-                            <p class="text-justify">Página web para dar a conocer los 2 proyectos anteriores, realizada con HTML, CSS con Boostrap y hosteada en un dominio.
-                            </p>
-                            <div class="flex-row">
-                                <a style="padding-right: 20px;" href="https://github.com/muskops/SaspreWeb" target="_blank"><i class="fas fa-file-code"></i></a>
-                                <a style="padding-right: 20px;" href="http://saspre.com/" target="_blank"><i class="fas fa-globe"></i></a>
-                                <a href="https://www.youtube.com/watch?v=RVfsT8f-Lig" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <div class="col-lg-4 mb-4">
+                        <div id="saspre" class="sm-card-pro d-flex justify-content-center align-items-center">
+                            <img class="sm-image" src="/img/proyectos/sasprew.png">
+                            <div class="sm-descripcion px-4">
+                                <h3 class="font-weight-bold">SASPRE Web</h3>
+                                <p class="text-justify">Página web para dar a conocer los 2 proyectos anteriores, realizada con HTML, CSS con Boostrap y hosteada en un dominio.
+                                </p>
+                                <div class="d-flex justify-content-around w-100">
+                                    <a href="https://github.com/muskops/SaspreWeb" target="_blank"><i class="fas fa-file-code"></i></a>
+                                    <a href="http://saspre.com/" target="_blank"><i class="fas fa-globe"></i></a>
+                                    <a href="https://www.youtube.com/watch?v=RVfsT8f-Lig" target="_blank"><i class="fab fa-youtube"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 sm-col-prin">
-                    <div class="sm-col">
-                        <img class="sm-image" src="/img/proyectos/hbuild.png" alt="HBuild">
-                        <div class="sm-description">
-                            <h6>HBuild</h6>
-                            <p class="text-justify">Aplicación móvil la cual es una red social para arquitectos y gente involucrada en construcciones, para ver casas, departamentos y edificios, desarrollada en Ionic con Firebase.
-                            </p>
-                            <a href="https://github.com/HBuild-Community/HBuild" target="_blank"><i class="fas fa-file-code"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 sm-col-prin">
-                    <div class="sm-col justify-content-center align-content-center">
-                        <img class="sm-image" style="height:100px;" src="/img/proyectos/cosas.png" alt="Cosas del Tec Mante">
-                        <div class="sm-description">
-                            <h6>Cosas del Tec Mante</h6>
-                            <p class="text-justify">Página web enfocada a estudiantes para calificar y puntuar a los maestros del Tecnológico de El Mante, desarrollada con HTML, CSS y PHP.
-                            </p>
-                            <div>
-                                <a style="padding-right: 20px;" href="https://github.com/iTzFiliSalsa/CosasDelTecMante" target="_blank"><i class="fas fa-file-code"></i></a>
-                                <a href="http://cosasdeltecmante.com/" target="_blank"><i class="fas fa-globe"></i></a>
+                    <div class="col-lg-4 mb-4">
+                        <div id="hbuild" class="sm-card-pro d-flex justify-content-center align-items-center">
+                            <img class="sm-image" src="/img/proyectos/hbuildblanco.png" alt="HBuild">
+                            <div class="sm-descripcion px-4">
+                                <h3 class="font-weight-bold">HBuild</h3>
+                                <p class="text-justify">Aplicación móvil la cual es una red social para arquitectos y gente involucrada en construcciones, para ver casas, departamentos y edificios, desarrollada en Ionic con Firebase.
+                                </p>
+                                <div class="d-flex justify-content-around w-100">
+                                    <a href="https://github.com/HBuild-Community/HBuild" target="_blank"><i class="fas fa-file-code"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 sm-col-prin">
-                    <div class="sm-col">
-                        <img class="sm-image" src="/img/proyectos/covidpreviene1.png" alt="Covid Previene">
-                        <div class="sm-description">
-                            <h6 style="font-size: 2em;">Covid Previene 19</h6>
-                            <p class="text-justify">App realizada en verano de investigacion 2020 en el ITESM para visitantes de establecimientos que pronostica los tiempos de menor concurrencia, minimizando el riesgo de exposición al SARS-CoV-2, utilizando Ionic, Google Maps
-                                API y BestTime.app.
-                            </p>
-                            <a href="https://github.com/muskops/covid-previene-19" target="_blank"><i class="fas fa-file-code"></i></a>
+                    <div class="col-lg-4 mb-4">
+                        <div id="cosas" class="sm-card-pro d-flex justify-content-center align-items-center">
+                            <img class="sm-image" src="/img/proyectos/cosas.png" alt="Cosas del Tec Mante">
+                            <div class="sm-descripcion px-4">
+                                <h3 class="font-weight-bold">Cosas del Tec Mante</h3>
+                                <p class="text-justify">Página web enfocada a estudiantes para calificar y puntuar a los maestros del Tecnológico de El Mante, desarrollada con HTML, CSS y PHP.
+                                </p>
+                                <div class="d-flex justify-content-around w-100">
+                                    <!-- <a href="https://github.com/iTzFiliSalsa/CosasDelTecMante" target="_blank"><i class="fas fa-file-code"></i></a> -->
+                                    <a href="http://cosasdeltecmante.com/" target="_blank"><i class="fas fa-globe"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 sm-col-prin">
-                    <div class="sm-col">
-                        <img class="sm-image" src="/img/proyectos/talent.png" alt="Talent Top">
-                        <div class="sm-description">
-                            <h6>Talent Top</h6>
-                            <p class="text-justify">Aplicación móvil para evento especial de la carrera la cual permite hacer horario para cursos y pláticas, desarrollada en Flutter con web services PHP.
-                            </p>
-                            <a href="https://github.com/Joaquin4562/talent_top" target="_blank"><i class="fas fa-file-code"></i></a>
+                    <div class="col-lg-4 mb-4">
+                        <div id="covid" class="sm-card-pro d-flex justify-content-center align-items-center">
+                            <img class="sm-image" src="/img/proyectos/covidpreviene1.png" alt="Covid Previene">
+                            <div class="sm-descripcion px-4">
+                                <h3 class="font-weight-bold">Covid Previene</h3>
+                                <p class="text-justify">App realizada en verano de investigacion 2020 en el ITESM que pronostica los tiempos de menor concurrencia en lugares, utilizando Ionic, Google Maps API y BestTime.app.
+                                </p>
+                                <div class="d-flex justify-content-around w-100">
+                                    <a href="https://github.com/muskops/covid-previene-19" target="_blank"><i class="fas fa-file-code"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 sm-col-prin">
-                    <div class="sm-col">
-                        <img class="sm-image" src="/img/proyectos/bugoff.png" alt="Bugoff">
-                        <div class="sm-description">
-                            <h6>Bugoff</h6>
-                            <p class="text-justify">Aplicación web el cual permite organizar todas aquellos bugs y errores de un proyecto, enfocado en testing, desarrollada con Angular y Firebase.
-                            </p>
-                            <a href="https://github.com/XSAS-Community/Bugoff" target="_blank"><i class="fas fa-file-code"></i></a>
+                    <div class="col-lg-4 mb-4">
+                        <div id="talent" class="sm-card-pro d-flex justify-content-center align-items-center">
+                            <img class="sm-image" src="/img/proyectos/talent.png" alt="Talent Top">
+                            <div class="sm-descripcion px-4">
+                                <h3 class="font-weight-bold">Talent Top</h3>
+                                <p class="text-justify">Aplicación móvil para evento especial de la carrera la cual permite hacer horario para cursos y pláticas, desarrollada en Flutter con web services PHP.
+                                </p>
+                                <div class="d-flex justify-content-around w-100">
+                                    <a href="https://github.com/Joaquin4562/talent_top" target="_blank"><i class="fas fa-file-code"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 sm-col-prin">
-                    <div class="sm-col">
-                        <img class="sm-image" src="/img/proyectos/RosetaLogo.png" alt="Bugoff">
-                        <div class="sm-description">
-                            <h6>Roseta</h6>
-                            <p class="text-justify">Landing Page de productos Roseta los cuales fueron productos en un proyecto universitario para el emprendimiento realizada en HTML y CSS.
-                            </p>
-                            <a href="https://github.com/muskops/Roseta" target="_blank"><i class="fas fa-file-code"></i></a>
+                    <div class="col-lg-4 mb-4">
+                        <div id="bugoff" class="sm-card-pro d-flex justify-content-center align-items-center">
+                            <img class="sm-image" src="/img/proyectos/bugoff.png" alt="Bugoff">
+                            <div class="sm-descripcion px-4">
+                                <h3 class="font-weight-bold">Bugoff</h3>
+                                <p class="text-justify">Aplicación web el cual permite organizar todas aquellos bugs y errores de un proyecto, enfocado en testing, desarrollada con Angular y Firebase.
+                                </p>
+                                <div class="d-flex justify-content-around w-100">
+                                    <a href="https://github.com/XSAS-Community/Bugoff" target="_blank"><i class="fas fa-file-code"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 sm-col-prin">
-                    <div class="sm-col">
-                        <img class="sm-image" src="/img/proyectos/adamant.png" alt="Adamant">
-                        <div class="sm-description">
-                            <h6>Adamant</h6>
-                            <p class="text-justify">Compilador capaz de realizar operaciones matemáticas básicas y mostrar resultados basado en C# pero traducido a español, desarrollado en C# con ayuda de la librería Irony.
-                            </p>
-                            <a href="https://github.com/muskops/ADAMANT" target="_blank"><i class="fas fa-file-code"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 sm-col-prin">
-                    <div class="sm-col justify-content-center align-content-center">
-                        <img class="sm-image" style="width: 300px;" src="/img/proyectos/vitro.png" alt="VitroMante">
-                        <div class="sm-description">
-                            <h6>VitroMante</h6>
-                            <p class="text-justify">Punto de venta para empresa VitroMante la cual permite administrar el inventario, pedidos etc, desarrollado con C# y SQL Server.
-                            </p>
-                            <a href="https://github.com/muskops/SistemaVitroMante" target="_blank"><i class="fas fa-file-code"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 sm-col-prin">
-                    <div class="sm-col">
-                        <img class="sm-image" src="/img/proyectos/encud.png" alt="Encud">
-                        <div class="sm-description">
-                            <h6>Encud</h6>
-                            <p class="text-justify">Aplicación móvil realizar encuestas por parte del sector salud de la región, desarrollada primeramente en Android con Room y despues transferida a Ionic con web services PHP.</p>
-                            <a href="https://github.com/XSAS-Community/Encud" target="_blank"><i class="fas fa-file-code"></i></a>
+                    <div class="col-lg-4 mb-4">
+                        <div id="roseta" class="sm-card-pro d-flex justify-content-center align-items-center">
+                            <img class="sm-image" src="/img/proyectos/RosetaLogo.png" alt="Bugoff">
+                            <div class="sm-descripcion px-4">
+                                <h3 class="font-weight-bold">Roseta</h3>
+                                <p class="text-justify">Landing Page de productos Roseta los cuales fueron productos en un proyecto universitario para el emprendimiento realizada en HTML y CSS.
+                                </p>
+                                <div class="d-flex justify-content-around w-100">
+                                    <a href="https://github.com/muskops/Roseta" target="_blank"><i class="fas fa-file-code"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <section id="logros" class="sm-logros">
-        <div class="sm-logros-title">
-            <h1 class="text-center ">Mis logros, reconocimientos y cursos</h1>
-            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 200px;">
+        <div class="text-center">
+            <h1 class="sm-color-primary font-weight-bolder">Mis logros, reconocimientos y cursos</h1>
+            <h5>Algunos de los logros que he conseguido</h5>
         </div>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="15"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="16"></li>
-            </ol>
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade my-4" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-30 border" src="img/logros/reconocimientotec.png" alt="Reconocimiento ITSM">
+                    <a href="img/logros/reconocimientotec.png" data-lightbox="logros" data-title="Reconocimiento ITSM">
+                        <img class="d-block border" src="img/logros/reconocimientotec.png" height="600px" alt="Reconocimiento ITSM">
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-30 border" src="img/logros/constanciaverano.png" alt="Reconocimiento CBTis 15">
+                    <a href="img/logros/constancia-verano.jpg" data-lightbox="logros" data-title="Constancia de Verano de investigación 2020">
+                        <img class="d-block  border" src="img/logros/constancia-verano.jpg" alt="Constancia de Verano de investigación 2020">
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-50 border" src="img/logros/constanciatamcoder.jpg" alt="Reconocimiento CBTis 15">
+                    <a href="img/logros/constanciaverano.png" data-lightbox="logros" data-title="Constancia de Verano de investigación 2020">
+                        <img class="d-block  border" src="img/logros/constanciaverano.png" alt="Constancia de Verano de investigación 2020">
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-30 border" src="img/logros/reconocimientocodingcup.png" alt="Reconocimiento CBTis 15">
+                    <a href="img/logros/constanciatamcoder.jpg" data-lightbox="logros" data-title="Constancia de participación concurso tamcoder">
+                        <img class="d-block  border" src="img/logros/constanciatamcoder.jpg" alt="Constancia Tamcoder">
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-30 border" src="img/logros/reconocimientocbtis.png" alt="Reconocimiento CBTis 15">
+                    <a href="img/logros/reconocimientocodingcup.png" " data-lightbox="logros " data-title="Reconocimiento coding cup ">
+                        <img class="d-block border " src="img/logros/reconocimientocodingcup.png "" alt="Reconocimiento coding cup">
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-50 border" src="img/logros/acreditacionms.png" alt="">
+                    <a href="img/logros/reconocimientocbtis.png" data-lightbox="logros" data-title="Reconocimiento CBTis 15">
+                        <img class="d-block  border" src="img/logros/reconocimientocbtis.png" alt="Reconocimiento CBTis 15">
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-50 border" src="img/logros/constanciahbuild1.png" alt="">
+                    <a href="img/logros/acreditacionms.png" data-lightbox="logros" data-title="Acreditación Microsoft">
+                        <img class="d-block  border" src="img/logros/acreditacionms.png" alt="Acreditación Microsoft">
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-50 border" src="img/logros/constanciahbuild.png" alt="">
+                    <a href="img/logros/constanciahbuild1.png" data-lightbox="logros" data-title="Constancia HBuild">
+                        <img class="d-block  border" src="img/logros/constanciahbuild1.png" alt="Constancia HBuild">
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-50 border" src="img/logros/constanciainglesparatodos.png" alt="">
+                    <a href="img/logros/constanciahbuild.png" data-lightbox="logros" data-title="Constancia HBuild">
+                        <img class="d-block  border" src="img/logros/constanciahbuild.png" alt="Constancia HBuild">
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-50 border" src="img/logros/certificadoAngular5.png" alt="">
+                    <a href="img/logros/constanciainglesparatodos.png" data-lightbox="logros" data-title="Constancia inglés">
+                        <img class="d-block  border" src="img/logros/constanciainglesparatodos.png" alt="Constancia inglés">
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-50 border" src="img/logros/certificadohtml.png" alt="">
+                    <a href="img/logros/certificadoAngular5.png" data-lightbox="logros" data-title="Certificado Angular">
+                        <img class="d-block  border" src="img/logros/certificadoAngular5.png" alt="Certificado Angular">
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-50 border" src="img/logros/certificadosqludemy.png" alt="">
+                    <a href="img/logros/certificadohtml.png" data-lightbox="logros" data-title="Certificado HTML">
+                        <img class="d-block  border" src="img/logros/certificadohtml.png" alt="Certificado HTML">
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-50 border" src="img/logros/cursoudemybootsrap.jpg" alt="">
+                    <a href="img/logros/certificadosqludemy.png" data-lightbox="logros" data-title="Certificado SQL">
+                        <img class="d-block  border" src="img/logros/certificadosqludemy.png" alt="Certificado SQL">
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-50 border" src="img/logros/cursoudemyjs.jpg" alt="">
+                    <a href="img/logros/cursoudemybootsrap.jpg" data-lightbox="logros" data-title="Certificado bootstrap">
+                        <img class="d-block  border" src="img/logros/cursoudemybootsrap.jpg" alt="Certificado bootstrap">
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-50 border" src="img/logros/congreso.jpg" alt="">
+                    <a href="img/logros/cursoudemyjs.jpg" data-lightbox="logros" data-title="Certificado Javascript">
+                        <img class="d-block  border" src="img/logros/cursoudemyjs.jpg" alt="Certificado Javascript">
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-50 border" src="img/logros/constanciaofimatica.jpg" alt="">
+                    <a href="img/logros/congreso.jpg" data-lightbox="logros" data-title="Constancia Congreso ITSM">
+                        <img class="d-block  border" src="img/logros/congreso.jpg" alt="Constancia Congreso ITSM">
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-50 border" src="img/logros/hourcode.png" alt="">
+                    <a href="img/logros/constanciaofimatica.jpg" data-lightbox="logros" data-title="Constancia ofimatica">
+                        <img class="d-block  border" src="img/logros/constanciaofimatica.jpg" alt="Constancia ofimatica">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="img/logros/hourcode.png" data-lightbox="logros" data-title="Certificado Hour Code">
+                        <img class="d-block  border" src="img/logros/hourcode.png" alt="Certificado Hour Code">
+                    </a>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon sm-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
                 <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon sm-icon" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+                <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
                 <span class="sr-only">Next</span>
             </a>
-    </section>
-
-    <section id="cv" class="sm-cv">
-        <div class="sm-cv-title">
-            <h1 class="text-center ">Mi Curriculum Vitae</h1>
-            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 200px;">
-        </div>
-        <div class="center-cv">
-            <embed src="img/cv/cv.pdf" width="1000" height="1200" frameborder="1" class="sm-embed">
         </div>
     </section>
-
-    <script src="js/scripts.js"></script>
-    <script src="js/jquery-3.4.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-</body>
-
-<footer id="contact" class="page-footer font-small unique-color-dark">
-
-    <div style="background-color: rgb(29, 112, 189);">
+    <section class="sm-cv py-5">
+        <div class="text-center">
+            <h1 class="sm-color-primary font-weight-bolder">Mi curriculum vitae</h1>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <embed src="img/cv/cv.pdf" frameborder="1">
+        </div>
+    </section>
+    <section id="contacto" class="sm-footer p-5">
         <div class="container">
-            <div class="row py-4 d-flex align-items-center">
-                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                    <h6 class="mb-0 text-white">Encuentrame en mis redes sociales!</h6>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class=" text-white">
+                        <h4 class="font-weight-bolder">André Ibarra Pérez</h4>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100px; background-color: white; height: 1px;">
+                        <p class="w-75" style="text-align: justify;">Desarrollador FrontEnd Web & Mobile entusiasmado de poder demostrar mis conocimientos desarrollando y programando cualquier proyecto</p>
+                    </div>
                 </div>
-                <div class="col-md-6 col-lg-7 text-center text-md-right sm-footer-social">
-                    <a href="https://drive.google.com/file/d/1hXSrsoEjYqjK4Mi0wbeAyWmqa9QZznIc/view?usp=sharing" target="_blank"><i class="far fa-file text-white mr-4"> </i></a>
-                    <a href="https://github.com/muskops" target="_blank"><i class="fab fa-github text-white mr-4"></i></a>
-                    <a href="https://www.linkedin.com/in/ibarraandre/" target="_blank"><i class="fab fa-linkedin text-white mr-4"></i></a>
-                    <a href="https://www.facebook.com/sk8muski/" target="_blank"><i class="fab fa-facebook-f text-white mr-4"></i></a>
-                    <a href="https://www.youtube.com/user/Raseclon" target="_blank"><i class="fab fa-youtube text-white mr-4"></i></a>
+                <div class="col-md-4">
+                    <div class=" text-white">
+                        <h4 class="font-weight-bolder">Contacto</h4>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 70px; background-color: white; height: 1px;">
+                        <p>
+                            <i class="fas fa-home mr-3"></i>Tamaulipas, México</p>
+                        <p>
+                            <i class="fas fa-envelope mr-3"></i> ibarraandre98@gmail.com</p>
+                        <p>
+                            <i class="fas fa-phone mr-3"></i> + 52 831 113 1562</p>
+                        <p>
+                            <i class="far fa-file mr-4"></i>
+                            <a class="text-white font-weight-bold" href="https://drive.google.com/file/d/1hXSrsoEjYqjK4Mi0wbeAyWmqa9QZznIc/view?usp=sharing" target="_blank"> Curriculum vitae</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
 
+                        <a href="./img/skaten.png" height="150px" alt="">
+                            <img src="./img/skaten.png" height="150px" alt="">
+                        </a>
+                        <h5 class="text-white font-weight-bolder">Si lo puedes imaginar lo puedes programar</h5>
+                    </div>
+                    <div class="d-flex justify-content-center pt-5">
+                        <a class="sm-circle" href="https://drive.google.com/file/d/1hXSrsoEjYqjK4Mi0wbeAyWmqa9QZznIc/view?usp=sharing" target="_blank"><i class="far fa-file"></i></a>
+                        <a class="sm-circle" href="https://github.com/muskops" target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="sm-circle" href="https://www.linkedin.com/in/ibarraandre/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a class="sm-circle" href="https://www.facebook.com/sk8muski/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="sm-circle" href="https://www.youtube.com/user/Raseclon" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
             </div>
+            <div class="pt-5">
+                <h6 class="text-center text-white">© 2020 Copyright: André Ibarra Pérez</h6>
+            </div>
+
         </div>
-    </div>
-
-    <div class="container text-center text-md-left mt-5">
-        <div class="row mt-3">
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <h6 class="text-uppercase font-weight-bold">André Ibarra Pérez</h6>
-                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p class="text-justify">
-                    Desarrollador entusiasmado por programar aplicando todos los conocimientos que he obtenido a lo largo de mi carrera Ingeniero en Sistemas Computacionales.
-                </p>
-
+        <!-- <div class="container h-100 d-flex justify-content-center align-items-center flex-column">
+            <div class="d-flex flex-column align-items-center text-white text-center">
+                <h3 class="font-weight-bolder">André Ibarra Pérez</h3>
+                <p class="w-50">Desarrollador entusiasmado por programar aplicando todos los conocimientos que he obtenido a lo largo de mi carrera Ingeniero en Sistemas Computacionales.</p>
             </div>
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 sm-footer-proyectos">
+            <div class="text-center">
 
-                <h6 class="text-uppercase font-weight-bold">Web</h6>
-                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>
-                    <a href="#inicio">Inicio</a>
-                </p>
-                <p>
-                    <a href="#sobremi">Sobre mi</a>
-                </p>
-                <p>
-                    <a href="#proyectos">Mis proyectos</a>
-                </p>
-                <p>
-                    <a href="#logros">Mis logros</a>
-                </p>
-                <p>
-                    <a href="#cv">Mi CV</a>
-                </p>
+                <a href="./img/skaten.png" height="150px" alt="">
+                    <img src="./img/skaten.png" height="150px" alt="">
+                </a>
+                <h5 class="text-white">Si lo puedes imaginar lo puedes programar</h5>
             </div>
-
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 sm-footer-proyectos">
-                <h6 class="text-uppercase font-weight-bold">Mis proyectos</h6>
-                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>
-                    <a href="https://saspre.com" target="_blank">SASPRE</a>
-                </p>
-                <p>
-                    <a href="https://saspre.com" target="_blank">SASPRE MOBILE</a>
-                </p>
-                <p>
-                    <a href="https://github.com/HBuild-Community/HBuild" target="_blank">HBuild</a>
-                </p>
-                <p>
-                    <a href="http://cosasdeltecmante.com/" target="_blank">Cosas del Tec Mante</a>
-                </p>
-                <p>
-                    <a href="https://github.com/muskops/covid-previene-19" target="_blank">Covid Previene 19</a>
-                </p>
-                <p>
-                    <a href="https://github.com/Joaquin4562/talent_top" target="_blank">Talent Top</a>
-                </p>
-                <p>
-                    <a href="https://github.com/XSAS-Community/Bugoff" target="_blank">Bugoff</a>
-                </p>
-                <p>
-                    <a href="https://github.com/XSAS-Community/Encud" target="_blank">Encud</a>
-                </p>
-                <p>
-                    <a href="https://github.com/muskops/SistemaVitroMante" target="_blank">VitroMante</a>
-                </p>
-                <p>
-                    <a href="https://github.com/muskops/ADAMANT" target="_blank">Adamant</a>
-                </p>
+            <div class="d-flex justify-content-center pt-5">
+                <a class="sm-circle" href="https://drive.google.com/file/d/1hXSrsoEjYqjK4Mi0wbeAyWmqa9QZznIc/view?usp=sharing" target="_blank"><i class="far fa-file"></i></a>
+                <a class="sm-circle" href="https://github.com/muskops" target="_blank"><i class="fab fa-github"></i></a>
+                <a class="sm-circle" href="https://www.linkedin.com/in/ibarraandre/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a class="sm-circle" href="https://www.facebook.com/sk8muski/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="sm-circle" href="https://www.youtube.com/user/Raseclon" target="_blank"><i class="fab fa-youtube"></i></a>
             </div>
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 sm-footer-proyectos">
-                <h6 class="text-uppercase font-weight-bold">Contacto</h6>
-                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>
-                    <i class="fas fa-home mr-3"></i>Calle San Antonio #111, Fraccionamiento Fátima, Juárez, NL</p>
-                <p>
-                    <i class="fas fa-envelope mr-3"></i> ibarraandre98@gmail.com</p>
-                <p>
-                    <i class="fas fa-phone mr-3"></i> + 52 831 113 1562</p>
-                <p>
-                    <i class="far fa-file mr-4"></i>
-                    <a href="https://drive.google.com/file/d/1hXSrsoEjYqjK4Mi0wbeAyWmqa9QZznIc/view?usp=sharing" target="_blank"> Curriculum vitae</a>
-                </p>
+            <div class="pt-5">
+                <h6 class="text-center text-white">© 2020 Copyright: André Ibarra Pérez</h6>
             </div>
-        </div>
-    </div>
-    <div class="footer-copyright text-center py-1">© 2020 Copyright: André Ibarra Pérez
-    </div>
-
-</footer>
+        </div> -->
+    </section>
+    <script src="./js/script.js"></script>
+</body>
 
 </html>
