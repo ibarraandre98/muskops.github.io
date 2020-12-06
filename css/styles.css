@@ -18,7 +18,24 @@ body {
     background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(78, 127, 204, 1) 0%, rgba(90, 202, 202, 1) 100%);
 }
 
-sm-nav-ul {
+.sm-nav-position {
+    position: fixed;
+    width: 100%;
+}
+
+.sm-ante-nav {
+    background-color: rgb(78, 128, 204);
+    transition: all 0.5s;
+}
+
+.sm-ante-nav-saved {
+    background-color: inherit;
+    transition: all 0.5s;
+}
+
+.sm-nav {}
+
+.sm-nav-ul {
     margin-right: 30px;
 }
 
@@ -69,6 +86,10 @@ sm-nav-ul {
     display: inherit;
 }
 
+.sm-principal {
+    padding-top: 150px;
+}
+
 @media only screen and (max-width: 991px) {
     /* .nav-item:not(:last-child) {
         margin-right: inherit;
@@ -77,6 +98,12 @@ sm-nav-ul {
         margin-top: 10px;
         margin-right: inherit;
     } */
+    .sm-principal {
+        padding-top: 60px;
+    }
+    .sm-nav-position {
+        position: relative;
+    }
     .nav-item:not(:last-child) {
         text-align: left;
     }
